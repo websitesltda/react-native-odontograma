@@ -5,6 +5,8 @@
 
 `$ npm install react-native-odontograma --save`
 
+`$ yarn add react-native-odontograma `
+
 ### Mostly automatic installation
 
 `$ react-native link react-native-odontograma`
