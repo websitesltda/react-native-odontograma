@@ -144,7 +144,7 @@ function RNOdontograma({ }) {
                         <View style={styles.Seson1}>
 
                             {e.Sesion1.map((s1) => (
-                                <TouchableOpacity key={s1.Index} style={{ width: 43, height: '98%', marginRight: 5, backgroundIndex: '48', Color: s1.Color, alignItems: "center", justifyContent: 'center' }}>
+                                <TouchableOpacity key={s1.Index} style={{ width: 43, height: '98%', marginRight: 5, backgroundColor: s1.Color, alignItems: "center", justifyContent: 'center' }}>
                                     <Text style={{ fontSize: 15, fontWeight: 'bold' }}>{s1.Text}</Text>
                                 </TouchableOpacity>
                             ))}
@@ -214,7 +214,7 @@ function RNOdontograma({ }) {
                         <View style={styles.Seson7}>
 
                             {e.Sesion7.map((s7) => (
-                                <TouchableOpacity key={s7.Index} style={{ width: 43, marginRight: 5, height: '98%', backgroundIndex: '48', Color: s7.Color, alignItems: "center", justifyContent: 'center' }}>
+                                <TouchableOpacity key={s7.Index} style={{ width: 43, marginRight: 5, height: '98%', backgroundColor: s7.Color, alignItems: "center", justifyContent: 'center' }}>
                                     <Text style={{ fontSize: 15, fontWeight: 'bold' }}>{s7.Text}</Text>
                                 </TouchableOpacity>
                             ))}
