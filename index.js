@@ -1,7 +1,7 @@
 
 import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-function RNOdontograma({ }) {
+function RNOdontograma({ Clicked }) {
 
     const OdontoGrama = [
         {
@@ -144,7 +144,7 @@ function RNOdontograma({ }) {
                         <View style={styles.Seson1}>
 
                             {e.Sesion1.map((s1) => (
-                                <TouchableOpacity key={s1.Index} style={{ width: 43, height: '98%', marginRight: 5, backgroundColor: s1.Color, alignItems: "center", justifyContent: 'center' }}>
+                                <TouchableOpacity onPress={() => Clicked(s1.Index)} key={s1.Index} style={{ width: 43, height: '98%', marginRight: 5, backgroundColor: s1.Color, alignItems: "center", justifyContent: 'center' }}>
                                     <Text style={{ fontSize: 15, fontWeight: 'bold' }}>{s1.Text}</Text>
                                 </TouchableOpacity>
                             ))}
@@ -154,7 +154,7 @@ function RNOdontograma({ }) {
                         <View style={styles.Seson2}>
 
                             {e.Sesion2.map((s2) => (
-                                <TouchableOpacity key={s2.Index} style={{ width: 43, marginRight: 5, height: '98%', alignItems: "center", justifyContent: 'center' }}>
+                                <TouchableOpacity onPress={() => Clicked(s2.Index)} key={s2.Index} style={{ width: 43, marginRight: 5, height: '98%', alignItems: "center", justifyContent: 'center' }}>
                                     <Image style={{ width: '100%', height: '80%' }} resizeMode="contain" source={s2.Image} />
                                 </TouchableOpacity>
                             ))}
@@ -166,7 +166,7 @@ function RNOdontograma({ }) {
                             {e.Sesion3.map((s3, index3) => (
                                 <View key={index3} style={{ width: 43, height: 43, marginRight: 5, flexDirection: 'row', flexWrap: 'wrap' }}>
                                     {s3.Buttons.map((b) => (
-                                        <TouchableOpacity key={b.Index} style={{ width: 20, height: 20, backgroundColor: b.Color, borderColor: '#000', borderWidth: 1 }} />
+                                        <TouchableOpacity onPress={() => Clicked(b.Index)} key={b.Index} style={{ width: 20, height: 20, backgroundColor: b.Color, borderColor: '#000', borderWidth: 1 }} />
                                     ))}
                                 </View>
                             ))}
@@ -194,7 +194,7 @@ function RNOdontograma({ }) {
                             {e.Sesion5.map((s5, index5) => (
                                 <View key={index5} style={{ width: 43, height: 43, marginRight: 5, flexDirection: 'row', flexWrap: 'wrap' }}>
                                     {s5.Buttons.map((b) => (
-                                        <TouchableOpacity key={b.Index} style={{ width: 20, height: 20, backgroundColor: b.Color, borderColor: '#000', borderWidth: 1 }} />
+                                        <TouchableOpacity onPress={() => Clicked(b.Index)}  key={b.Index} style={{ width: 20, height: 20, backgroundColor: b.Color, borderColor: '#000', borderWidth: 1 }} />
                                     ))}
                                 </View>
                             ))}
@@ -204,7 +204,7 @@ function RNOdontograma({ }) {
                         <View style={styles.Seson6}>
 
                             {e.Sesion6.map((s6) => (
-                                <TouchableOpacity key={s6.Index} style={{ width: 43, marginRight: 5, height: '98%', alignItems: "center", justifyContent: 'center' }}>
+                                <TouchableOpacity onPress={() => Clicked(s6.Index)}  key={s6.Index} style={{ width: 43, marginRight: 5, height: '98%', alignItems: "center", justifyContent: 'center' }}>
                                     <Image style={{ width: '100%', height: '80%' }} resizeMode="contain" source={s6.Image} />
                                 </TouchableOpacity>
                             ))}
@@ -214,7 +214,7 @@ function RNOdontograma({ }) {
                         <View style={styles.Seson7}>
 
                             {e.Sesion7.map((s7) => (
-                                <TouchableOpacity key={s7.Index} style={{ width: 43, marginRight: 5, height: '98%', backgroundColor: s7.Color, alignItems: "center", justifyContent: 'center' }}>
+                                <TouchableOpacity onPress={() => Clicked(s7.Text)} key={s7.Index} style={{ width: 43, marginRight: 5, height: '98%', backgroundColor: s7.Color, alignItems: "center", justifyContent: 'center' }}>
                                     <Text style={{ fontSize: 15, fontWeight: 'bold' }}>{s7.Text}</Text>
                                 </TouchableOpacity>
                             ))}
