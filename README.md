@@ -1,4 +1,5 @@
 
+# Desenvolvido por 4TSistemas
 # react-native-odontograma
 
 ## Getting started
@@ -7,9 +8,6 @@
 
 `$ yarn add react-native-odontograma `
 
-### Mostly automatic installation
-
-`$ react-native link react-native-odontograma`
 
 ![date-range-picker](https://github.com/websitesltda/react-native-odontograma/blob/main/assets/bg.png)
 
