@@ -39,7 +39,11 @@
 ```javascript
 import RNOdontograma from 'react-native-odontograma';
 
-// TODO: What to do with the module?
-RNOdontograma;
+export default function App() {
+
+  return (
+    <RNOdontograma Clicked={(e) => console.log(e)} />
+  );
+}
 ```
   
