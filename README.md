@@ -42,7 +42,7 @@ import RNOdontograma from 'react-native-odontograma';
 export default function App() {
 
   return (
-    <RNOdontograma Clicked={(e) => console.log(e)} />
+     <RNOdontograma Clicked={(e) => console.log(e)} BtnColors={[{ Index: '18_4', Color: '#f00' }, { Index: '18_3', Color: '#f00' }]} />
   );
 }
 ```
