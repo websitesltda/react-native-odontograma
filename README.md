@@ -9,7 +9,7 @@
 
 `$ react-native link react-native-odontograma`
 
-![date-range-picker](https://raw.githubusercontent.com/lazaronixon/react-native-date-range-picker/master/screenshots/shot1.png)
+![date-range-picker](https://github.com/websitesltda/react-native-odontograma/blob/main/assets/bg.png)
 
 
 ## Usage
